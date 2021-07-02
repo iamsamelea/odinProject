@@ -1,0 +1,113 @@
+:root {
+  --negroHeader: #222222;
+  --grisHeader: #5f6368;
+}
+
+/*REINICIADORES*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem = 10 pixels*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*GLOBALES*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+a {
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*HEADER*/
+.header {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  padding: 0.6rem;
+  justify-content: space-between;
+}
+
+.enlace_header {
+  color: var(--negroHeader);
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.sobre_nosotros {
+  margin-left: 1.5rem;
+}
+
+.div_header2 {
+  min-width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.div_header2 a {
+  font-size: 1.3rem;
+}
+
+.enlace_imagenes {
+  padding: 0 1.5 0 0rem;
+}
+
+.icon-tabler-grid-dots {
+  height: 2.2rem;
+  width: 2.2rem;
+  color: var(--grisHeader);
+  padding: 0.1rem;
+}
+
+.aplicacionesGoogle {
+  padding: 1rem;
+}
+
+.aplicacionesGoogle:hover {
+  background-color: rgba(168, 166, 166, 0.329);
+  border-radius: 50%;
+}
+
+.imagenUsuario {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50%;
+  padding: 0.05rem;
+}
+
+.fondo_imagenUsuario {
+  margin: 0.7rem;
+  padding: 0.2rem;
+}
+
+.fondo_imagenUsuario:hover {
+  background-color: rgba(168, 166, 166, 0.329);
+  border-radius: 80%;
+}
+
+.header_derecha {
+  padding-left: 0 0 0 1.5rem;
+}
+
+/*LOGO*/
+.logo_google {
+  min-width: auto;
+  height: 29rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.logo_google img {
+  max-width: 100%;
+  height: 9.2rem;
+}

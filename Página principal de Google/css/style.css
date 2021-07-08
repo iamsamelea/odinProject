@@ -1,6 +1,10 @@
 :root {
   --negroHeader: #222222;
   --grisHeader: #5f6368;
+  --grisborder: #dfe1e5;
+  --fondoBoton: #f8f9fa;
+  --backgroundFooter: #f2f2f2;
+  --footerText: #70757a;
 }
 
 /*REINICIADORES*/
@@ -26,6 +30,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+input {
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  color: #3c4043;
 }
 
 /*HEADER*/
@@ -110,4 +120,159 @@ a:hover {
 .logo_google img {
   max-width: 100%;
   height: 9.2rem;
+}
+
+/*BARRA BUSQUEDA*/
+.contenedor_buscar {
+  /* background-color: gray; */
+  max-height: 16rem;
+  padding: 2rem;
+}
+
+.contenedor_buscar form {
+  width: auto;
+  max-width: 584px;
+  margin: 0 auto;
+  padding-top: 6px;
+}
+
+.contenedor_searchbar {
+  display: flex;
+  border: 0.1rem solid var(--grisborder);
+  box-shadow: none;
+  border-radius: 2.4rem;
+  height: 4.4rem;
+  margin: 0 auto;
+}
+
+.contenedor_searchbar:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.contenido_searchbar {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+}
+
+.searchbar_lupa {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.icon-tabler-search {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.icon-tabler-microphone {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.micro {
+  display: flex;
+  align-items: center;
+  padding-top: 0.3rem;
+  padding-right: 0.7rem;
+}
+
+.searchbar_barra {
+  display: flex;
+  flex: 1;
+}
+
+.searchbar_barra input {
+  background-color: transparent;
+  border: none;
+  color: rgba(0, 0, 0, 87);
+  outline: none;
+  display: flex;
+  flex: 100%;
+  height: 3.4rem;
+  font-size: 1.6rem;
+}
+
+/*BOTONES*/
+.contenedor_botones {
+  padding-top: 18px;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+}
+
+.boton_busqueda {
+  background-color: var(--fondoBoton);
+  border: 0.1rem solid var(--fondoBoton);
+  border-radius: 0.4rem;
+  height: 3.6rem;
+  margin: 1.1rem 0.4rem;
+  padding: 0 1.6rem;
+}
+
+.boton_busqueda:hover {
+  box-shadow: 0 0.1rem 0.1rem rgb(0 0 0 / 10%);
+  background-color: var(--fondoBoton);
+  border: 0.1rem solid #dadce0;
+  color: #202124;
+}
+
+/*DIV IDIOMAS*/
+.contenedor_idiomas {
+  display: flex;
+  justify-content: center;
+  height: 36.5rem;
+}
+
+.div_idiomas {
+  font-size: 1.3rem;
+  margin-bottom: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.idiomas a {
+  padding: 0 0.3rem;
+  color: #1a0dab;
+  font-size: 1.3rem;
+}
+
+/*FOOTER*/
+.footer {
+  background-color: var(--backgroundFooter);
+}
+
+.footer1 {
+  padding: 1.5rem 3rem;
+  border-bottom: 0.1rem solid #dadce0;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.footer2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.footer2 a {
+  color: var(--footerText);
+  padding: 1.5rem 2rem;
+}
+
+.emision {
+  justify-content: center;
+}
+
+.boton_footer {
+  border: none;
+  color: var(--footerText);
+}
+
+.boton_footer:hover {
+  text-decoration: underline;
 }
